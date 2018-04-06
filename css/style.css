@@ -1,0 +1,41 @@
+nav {
+  font-family: Open Sans, sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  margin: 50px auto;
+  width: 500px;
+  height: 40px;
+}
+
+ul {
+  width: 500px;
+  margin: 0px auto;
+  list-style: none;
+}
+
+li {
+  float: left;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-right: 1px dotted #999;
+}
+
+li:last-child {
+  border: none;
+}
+
+li a {
+  text-decoration: none;
+  color: #888;
+}
+
+li a:hover {
+  color: #333;
+  border-bottom: 2px solid red;
+}
+
+li.active a {
+  color: red;
+  font-weight: normal;
+  border-bottom: none;
+}
