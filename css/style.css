@@ -1,3 +1,13 @@
+body {
+  background-color: #030f33;
+}
+header {
+  background-image: url(../img/backgrong.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  margin-top: -35px;
+}
 nav {
   font-family: Open Sans, sans-serif;
   font-size: 20px;
@@ -5,6 +15,7 @@ nav {
   margin: 50px auto;
   width: 500px;
   height: 40px;
+
 }
 
 ul {
