@@ -17,15 +17,15 @@ function audioPlayer() {
 }
 
 
-var animationEnd = (function(el) {
-    var animations = {
+const animationEnd = (function(el) {
+    const animations = {
         animation: 'animationend',
         OAnimation: 'oAnimationEnd',
         MozAnimation: 'mozAnimationEnd',
         WebkitAnimation: 'webkitAnimationEnd',
     };
 
-    for (var t in animations) {
+    for (const t in animations) {
         if (el.style[t] !== undefined) {
             return animations[t];
         }

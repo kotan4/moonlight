@@ -53,14 +53,59 @@
 
   #playList {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 50px;
+    /*grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));*/
+    /*grid-gap: auto;*/
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: 200px;
+    grid-template-areas:
+            " a b c d ";
   }
   #playList img{
     border-radius: 2%;
     border: 1px solid #FC244D;
+    width: 200px;
+    height: 200px;
+  }
+  #gridAreaA {
+    grid-area: a;
+    align-self: center;
+    justify-self: center;
   }
 
+  #gridAreaB {
+    grid-area: b;
+    align-self: center;
+    justify-self: center;
+  }
+
+  #gridAreaC {
+    grid-area: c;
+    align-self: center;
+    justify-self: center;
+  }
+
+  #gridAreaD {
+    grid-area: d;
+    align-self: center;
+    justify-self: center;
+  }
+
+
+  @media screen and (max-width: 1000px) {
+    #playList img{
+      width: 150px;
+      height: 150px;
+    }
+  }
+  @media screen and (max-width: 660px) {
+
+    #playList {
+      grid-template-areas:
+              ". a b ."
+              ". c d .";
+    }
+  }
   @media screen and (max-width: 500px) {
 
   .menu-icon a img{
@@ -81,5 +126,9 @@
     }
     ul {
       margin-left: -20px;
+    }
+    #playList img{
+      width: 150px;
+      height: 150px;
     }
 }
