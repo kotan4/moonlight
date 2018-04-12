@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Relax Radio</title>
+    <title>Moonlight Radio</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<div class="container">
 <header>
     <div class="menu-icon">
     <a><img src="img/menu-icon.svg"></a>
@@ -29,16 +31,34 @@
                 <a href="">Login</a>
             </li>
         </ul>
-
     </nav>
+    <audio src="" controls id="audioPlayer">blahblah</audio>
+    <div class="jumbotron">
+        <h1 class="display-4">Welcome to Moonlight Radio</h1>
+        <p class="lead">NaN</p>
+        <hr class="my-4">
+        <p>NaN</p>
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="#menu" role="button">Login</a>
+            <a class="btn btn-success btn-lg" href="#menu" role="button">Sign Up</a>
+        </p>
+    </div>
 </header>
 <main>
-    <section class="radio-icons"></section>
-    <section class="news"></section>
+    <section id="playList">
+        <a href="http://d.zaix.ru/6xTp.mp3"><img src="img/M_06.jpg" width="200x200"></a>
+        <a href="http://d.zaix.ru/6xTq.mp3"><img src="img/M_05.jpg" width="200x200"></a>
+        <a href="http://d.zaix.ru/6xTr.mp3"><img src="img/T_16.jpg" width="200x200"></a>
+        <a href="http://d.zaix.ru/5xvM.mp3"><img src="img/M_03.jpg" width="200x200"></a>
+    </section>
 </main>
+</div>
+<div class="container">
 <footer>
     <section class="feedback"></section>
 </footer>
+</div>
+
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/esm/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>

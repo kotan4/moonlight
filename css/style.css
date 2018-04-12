@@ -1,14 +1,10 @@
   body {
     background-color: #030f33;
-  }
-  header {
     background-image: url(../img/backgrong.svg);
+
     background-repeat: no-repeat;
     background-size: 100%;
-    height: 600px;
-    margin-top: -37px;
   }
-
   nav {
     font-family: Open Sans, sans-serif;
     font-size: 20px;
@@ -53,6 +49,16 @@
   }
   .menu-icon a img{
    display: none;
+  }
+
+  #playList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 50px;
+  }
+  #playList img{
+    border-radius: 2%;
+    border: 1px solid #FC244D;
   }
 
   @media screen and (max-width: 500px) {
