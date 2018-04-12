@@ -6,63 +6,87 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Moonlight Radio</title>
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animate.css">
 </head>
 <body>
 <div class="container">
-<header>
-    <div class="menu-icon">
-    <a><img src="img/menu-icon.svg"></a>
-    </div>
-    <nav>
-        <ul class="menu">
-            <li>
-                <a href="">Home</a>
-            </li>
-            <li>
-                <a href="#news">News</a>
-            </li>
-            <li>
-                <a href="#feedback">Feedback</a>
-            </li>
-            <li>
-                <a href="">Login</a>
-            </li>
-        </ul>
-    </nav>
-    <audio src="" controls id="audioPlayer">blahblah</audio>
-    <div class="jumbotron">
-        <h1 class="display-4">Welcome to Moonlight Radio</h1>
-        <p class="lead">NaN</p>
-        <hr class="my-4">
-        <p>NaN</p>
-        <p class="lead">
-            <a class="btn btn-primary btn-lg" href="#menu" role="button">Login</a>
-            <a class="btn btn-success btn-lg" href="#menu" role="button">Sign Up</a>
-        </p>
-    </div>
-</header>
-<main>
-    <section id="playList">
-        <a class="musicIcon" id="gridAreaA" href="http://d.zaix.ru/6xTp.mp3"><img src="img/M_06.jpg" ></a>
-        <a class="musicIcon" id="gridAreaB" href="http://d.zaix.ru/6xTq.mp3"><img src="img/M_05.jpg" ></a>
-        <a class="musicIcon" id="gridAreaC" href="http://d.zaix.ru/6xTr.mp3"><img src="img/T_16.jpg" ></a>
-        <a class="musicIcon" id="gridAreaD" href="http://d.zaix.ru/5xvM.mp3"><img src="img/M_03.jpg" ></a>
-    </section>
-</main>
+    <header>
+        <div class="menu-icon">
+            <a>
+                <img src="img/menu-icon.svg">
+            </a>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li>
+                    <a href="">Home</a>
+                </li>
+                <li>
+                    <a href="#news">News</a>
+                </li>
+                <li>
+                    <a href="#feedback">Feedback</a>
+                </li>
+                <li>
+                    <a href="login.html">Login</a>
+                </li>
+            </ul>
+        </nav>
+        <audio src="" id="audioPlayer">blahblah</audio>
+    </header>
+    <main>
+        <section id="playList">
+            <a class="musicIcon" id="gridAreaA" href="http://yogatimejournal.ru/wp-content/uploads/2014/07/01.-Archana-Goddess-Saraswati.mp3">
+                <img src="img/M_06.jpg">
+            </a>
+            <a class="musicIcon" id="gridAreaB" href="http://yogatimejournal.ru/wp-content/uploads/2014/07/08.-Bhairabi-A-Romantic-Combination-of-Notes.mp3">
+                <img src="img/M_05.jpg">
+            </a>
+            <a class="musicIcon" id="gridAreaC" href="http://yogatimejournal.ru/wp-content/uploads/2014/07/02.-Majhi-Fishing-Rod.mp3">
+                <img src="img/T_16.jpg">
+            </a>
+            <a class="musicIcon" id="gridAreaD" href="http://yogatimejournal.ru/wp-content/uploads/2014/07/05.-Damai-Geet-Songs-of-Traditional-Musicians.mp3">
+                <img src="img/M_03.jpg">
+            </a>
+        </section>
+        <div id="news">
+            <h3>News</h3>
+        </div>
+    </main>
 </div>
 <div class="container">
-<footer>
-    <section class="feedback"></section>
-</footer>
+    <footer>
+        <section id="feedback">
+            <form>
+                <h2>Feedback</h2>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Name</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Your name">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Your message</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <button type="button" class="btn btn-secondary">Send</button>
+            </form>
+        </section>
+        <div hidden class="alert alert-success" role="alert">Thank you!
+        </div>
+        <br>
+        <br>
+        <p>Content &copy;2018 Kotan4, unless otherwise noted.</p>
+    </footer>
 </div>
-
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/esm/popper.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="js/index.js"></script>
 </body>
 </html>
