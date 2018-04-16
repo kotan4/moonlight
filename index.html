@@ -74,9 +74,18 @@
         <section id="feedback">
             <form>
                 <h2>Feedback</h2>
-                <input name="name" type="text" class="feedback-input" placeholder="Name"/>
-                <input name="email" type="text" class="feedback-input" placeholder="Email"/>
-                <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+                <div>
+                    <input name="name" class="feedback-input" id="Name" type="text" required />
+                    <label for="Name">Name</label>
+                </div>
+                <div>
+                    <input name="email" class="feedback-input" id="email" type="text" required />
+                    <label for="email">Email</label>
+                </div>
+                <div>
+                    <textarea name="text" class="feedback-input" id="text" type="text" required></textarea>
+                    <label for="text">Your comment</label>
+                </div>
                 <input type="submit" value="SUBMIT"/>
             </form>
         </section>
