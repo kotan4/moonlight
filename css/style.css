@@ -41,9 +41,7 @@ body {
 
 nav {
   font-size: 24px;
-  font-weight: ;
   margin: 50px auto;
-
   height: 40px;
 }
 
@@ -174,16 +172,12 @@ li.active a {
   height: 200px;
 }
 
-.beat {
-  animation: beat 1s ease infinite;
-}
-
 #news {
   display: grid;
   color: #E03C42;
   background-color: rgba(232, 236, 255, 0.08);
   border: 1px solid #83ffd6;
-  margin-top: 50px;
+  margin-top: 70px;
   min-height: 200px;
   border-radius: 5px;
   line-height: 22px;
@@ -199,7 +193,8 @@ li.active a {
 }
 
 #news h1 {
-  margin-top: -30px;
+  margin-top: -56px;
+  margin-left: -10px;
 }
 
 #news p {
@@ -222,19 +217,23 @@ li.active a {
 
 .beat {
   animation: beat 1s ease infinite;
+
 }
 
 @keyframes beat {
   0% {
     transform: scale(1);
+    border: 1px solid #E03C42;
   }
 
   50% {
     transform: scale(1.05);
+    border: 1px solid #83ffd6;
   }
 
   100% {
     transform: scale(1);
+    border: 1px solid #E03C42;
   }
 }
 
@@ -260,6 +259,8 @@ li.active a {
     margin-top: 150px;
     margin-left: 23%;
   }
+
+
 }
 
 @media screen and (max-width: 991px) {
@@ -291,14 +292,18 @@ li.active a {
   #feedback {
     margin-top: 100px;
     margin-left: 16%;
+
   }
+}
+
+@media screen and (max-width: 793px) {
+
 }
 
 @media screen and (max-width: 660px) {
   #playList {
     grid-template-areas: ". a b ." ". c d .";
   }
-
   nav {
     min-height: 0;
   }
@@ -311,6 +316,7 @@ li.active a {
   #feedback {
     margin-left: 10%;
   }
+
 }
 
 @media screen and (max-width: 500px) {
@@ -411,6 +417,7 @@ textarea {
 [type="submit"]:hover {
   background: #E03C42;
 }
+
 form > div {
   position: relative;
   overflow: hidden;
@@ -446,3 +453,16 @@ form > div > textarea:focus + label, form > div > textarea:valid + label {
   top: 2px;
   left: 3px;
 }
+
+.controls {
+  width: 100px;
+  height: 100px;
+  margin-left: -19px;
+  margin-top: 50px;
+
+}
+
+
+
+
+
