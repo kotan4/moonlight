@@ -8,11 +8,13 @@
 
 .container {
   margin-top: 30px;
+  overflow: hidden;
 }
 
 #logoId {
   position: relative;
   left: 35%;
+  max-width: 200px;
 }
 
 #logoTextMoonlight {
@@ -39,7 +41,7 @@ body {
 
 nav {
   font-size: 24px;
-  font-weight: 300;
+  font-weight: ;
   margin: 50px auto;
 
   height: 40px;
@@ -125,6 +127,7 @@ li.active a {
   background-color: rgba(228, 237, 255, 0.53);
   opacity: 0;
   transition: .3s;
+  cursor: pointer;
 }
 
 .hoverImageText:hover {
