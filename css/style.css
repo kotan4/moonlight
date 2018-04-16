@@ -317,6 +317,11 @@ li.active a {
     margin-left: 10%;
   }
 
+  .controls {
+    width: 60px;
+    height: 60px;
+
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -455,11 +460,10 @@ form > div > textarea:focus + label, form > div > textarea:valid + label {
 }
 
 .controls {
+  position: absolute;
   width: 100px;
   height: 100px;
-  margin-left: -19px;
-  margin-top: 50px;
-
+  margin-left: 150px;
 }
 
 
