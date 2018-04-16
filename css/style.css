@@ -1,6 +1,4 @@
 @font-face {
-  font-family: BriskInlineGrunge;
-  src: url(../fonts/BriskInlineGrunge.ttf);
   font-family: SmoothStone-Regular;
   src: url(../fonts/SmoothStone-Regular.ttf);
 }
@@ -18,7 +16,7 @@
 }
 
 #logoTextMoonlight {
-  font-family: BriskInlineGrunge;
+  font-family: Brisk Inline Grunge;
   font-size: 100px;
   color: #e03c42;
 }
