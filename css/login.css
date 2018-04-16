@@ -7,21 +7,22 @@ html {
 }
 
 body {
-  background: #b52064;
-  background-image: url(../img/pinkBack.svg);
-  background-repeat: no-repeat;
-  background-size: 100%;
+  background: #CC6666;
+  background-image: url(../img/bckg.png);
+  background-repeat: repeat;
+  background-size: 10px;
+  background-position: top -1px;
   font-family: 'Titillium Web', sans-serif;
 }
 
 a {
   text-decoration: none;
-  color: #FC244D;
+  color: #CC6666;
   transition: .5s ease;
 }
 
 a:hover {
-  color: #FC244D;
+  color: #E03C42;
 }
 
 .form {
@@ -60,12 +61,12 @@ a:hover {
 }
 
 .tab-group li a:hover {
-  background: #FC244D;
+  background: #E03C42;
   color: #ffffff;
 }
 
 .tab-group .active a {
-  background: #FC244D;
+  background: #CC6666;
   color: #ffffff;
 }
 
@@ -94,7 +95,7 @@ label {
 
 label .req {
   margin: 2px;
-  color: #FC244D;
+  color: #CC6666;
 }
 
 label.active {
@@ -128,7 +129,7 @@ input, textarea {
 
 input:focus, textarea:focus {
   outline: 0;
-  border-color: #FC244D;
+  border-color: #CC6666;
 }
 
 textarea {
@@ -166,14 +167,14 @@ textarea {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: .1em;
-  background: #FC244D;
+  background: #CC6666;
   color: #ffffff;
   transition: all 0.5s ease;
   -webkit-appearance: none;
 }
 
 .button:hover, .button:focus {
-  background: #FC244D;
+  background: #E03C42;
 }
 
 .button-block {

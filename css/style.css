@@ -1,3 +1,36 @@
+@font-face {
+  font-family: BriskInlineGrunge;
+  src: url(../fonts/BriskInlineGrunge.ttf);
+  font-family: SmoothStone-Regular;
+  src: url(../fonts/SmoothStone-Regular.ttf);
+}
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700); main {
+}
+
+.container {
+  margin-top: 30px;
+}
+
+#logoId {
+  position: relative;
+  left: 35%;
+}
+
+#logoTextMoonlight {
+  font-family: BriskInlineGrunge;
+  font-size: 100px;
+  color: #e03c42;
+}
+
+#logoTextRadio {
+  font-family: SmoothStone-Regular;
+  font-size: 100px;
+  color: #83ffd6;
+  margin-left: 320px;
+  margin-top: -100px;
+}
+
 body {
   background-color: #030f33;
   background-image: url(../img/backgrong.svg);
@@ -15,7 +48,7 @@ nav {
 }
 
 header {
-  height: 500px;
+  min-height: 300px;
 }
 
 ul {
@@ -42,11 +75,11 @@ li a {
 
 li a:hover {
   color: #333;
-  border-bottom: 2px solid #FC244D;
+  border-bottom: 2px solid #E03C42;
 }
 
 li.active a {
-  color: #FC244D;
+  color: #E03C42;
   font-weight: normal;
   border-bottom: none;
 }
@@ -65,40 +98,125 @@ li.active a {
   grid-template-areas: " a b c d ";
 }
 
-#playList img {
-  border-radius: 2%;
-  border: 1px solid #FC244D;
-  width: 200px;
-  height: 200px;
-}
-
+/*#playList img {*/
+/*border-radius: 2%;*/
+/*border: 1px solid #FC244D;*/
+/*width: 200px;*/
+/*height: 200px;*/
+/*}*/
 #gridAreaA {
   grid-area: a;
   align-self: center;
   justify-self: center;
+  background-image: url("../img/playlistImg1.jpg");
+  background-size: cover;
+  border-radius: 2%;
+  box-shadow: 0 0 16px rgba(0,0,0,0.5);
+  border: 1px solid #83ffd6;
+  width: 200px;
+  height: 200px;
+}
+
+.hoverImageText {
+  height: 198px;
+  color: #E03C42;
+  font-size: 40px;
+  text-align: center;
+  padding: 8px;
+  padding-top: 25%;
+  background-color: rgba(228, 237, 255, 0.53);
+  opacity: 0;
+  transition: .3s;
+}
+
+.hoverImageText:hover {
+  opacity: 1;
+  padding-top: 35%;
 }
 
 #gridAreaB {
   grid-area: b;
   align-self: center;
   justify-self: center;
+  background-image: url("../img/playlistImg2.jpg");
+  background-size: cover;
+  border-radius: 2%;
+  box-shadow: 0 0 16px rgba(0,0,0,0.5);
+  border: 1px solid #83ffd6;
+  width: 200px;
+  height: 200px;
 }
 
 #gridAreaC {
   grid-area: c;
   align-self: center;
   justify-self: center;
+  background-image: url("../img/playlistImg3.jpg");
+  background-size: cover;
+  border-radius: 2%;
+  box-shadow: 0 0 16px rgba(0,0,0,0.5);
+  border: 1px solid #83ffd6;
+  width: 200px;
+  height: 200px;
 }
 
 #gridAreaD {
   grid-area: d;
   align-self: center;
   justify-self: center;
+  background-image: url("../img/playlistImg4.jpg");
+  background-size: cover;
+  border-radius: 2%;
+  box-shadow: 0 0 16px rgba(0,0,0,0.5);
+  border: 1px solid #83ffd6;
+  width: 200px;
+  height: 200px;
 }
 
-.menu li a.active {
-  color: #333;
-  border-bottom: 2px solid #FC244D;
+.beat {
+  animation: beat 1s ease infinite;
+}
+
+#news {
+  display: grid;
+  color: #E03C42;
+  background-color: rgba(232, 236, 255, 0.08);
+  border: 1px solid #83ffd6;
+  margin-top: 50px;
+  min-height: 200px;
+  border-radius: 5px;
+  line-height: 22px;
+  max-width: 900px;
+  box-sizing: border-box;
+  margin-left: 10%;
+  padding: 15px;
+}
+
+#someNews {
+  font-size: 20px;
+  color: rgba(96, 96, 96, 0.85);
+}
+
+#news h1 {
+  margin-top: -30px;
+}
+
+#news p {
+  font-size: 19px;
+  margin-top: -20px;
+  padding: 40px;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  color: #c5c9d9;
+}
+
+#feedback {
+  color: #E03C42;
+  max-width: 500px;
+  margin-left: 28%;
+}
+
+#copy {
+  margin-left: 38%;
 }
 
 .beat {
@@ -119,19 +237,59 @@ li.active a {
   }
 }
 
-.news {
-  display: grid;
-  color: #FC244D;
-}
-#feedback {
-  color: #FC244D;
-  max-width: 660px;
+@media screen and (max-width: 1199px) {
+  #playList div {
+    width: 170px;
+    height: 170px;
+  }
+
+  #news {
+    margin-left: 2%;
+  }
+
+  .container {
+    margin-top: -70px;
+  }
+
+  nav {
+    margin-top: 150px;
+  }
+
+  #feedback {
+    margin-top: 150px;
+    margin-left: 23%;
+  }
 }
 
-@media screen and (max-width: 1000px) {
-  #playList img {
+@media screen and (max-width: 991px) {
+  #playList div {
     width: 150px;
     height: 150px;
+  }
+
+  #news {
+    margin-left: 0;
+  }
+
+  #logoId {
+    margin-top: -100px;
+  }
+
+  #logoTextMoonlight {
+    font-size: 70px;
+  }
+
+  #logoTextRadio {
+    font-size: 70px;
+  }
+
+  nav {
+    margin-top: 150px;
+  }
+
+  #feedback {
+    margin-top: 100px;
+    margin-left: 16%;
   }
 }
 
@@ -139,15 +297,27 @@ li.active a {
   #playList {
     grid-template-areas: ". a b ." ". c d .";
   }
+
+  nav {
+    min-height: 0;
+  }
+
+  #logoId {
+    margin-top: -200px;
+    left: 15%;
+  }
+
+  #feedback {
+    margin-left: 10%;
+  }
 }
 
 @media screen and (max-width: 500px) {
   .menu-icon a img {
-    width: 35px;
     display: inline;
-    height: 30px;
-    margin-bottom: -55px;
-    margin-left: 36px;
+    max-width: 50px;
+    margin-top: 100px;
+    margin-left: 50px;
   }
 
   header {
@@ -161,12 +331,82 @@ li.active a {
     border-right: none;
   }
 
-  ul {
-    margin-left: -20px;
+  nav {
+    margin-top: 10px;
+    margin-left: -6px;
   }
 
-  #playList img {
-    width: 150px;
-    height: 150px;
+  #logoId {
+    left: 25%;
   }
+
+  #logoTextMoonlight {
+    font-size: 40px;
+  }
+
+  #logoTextRadio {
+    font-size: 40px;
+    margin-left: 150px;
+    margin-top: -50px;
+  }
+
+  main {
+    margin-top: 200px;
+  }
+
+  #feedback {
+    margin-left: 0;
+  }
+}
+
+form {
+  max-width: 420px;
+  margin: 50px auto;
+}
+
+.feedback-input {
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: rgba(232, 236, 255, 0.08);
+  border: 2px solid #CC6666;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+.feedback-input:focus {
+  border: 2px solid #E03C42;
+}
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background: #CC6666;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 0.3s;
+  margin-top: -4px;
+  font-weight: 700;
+}
+
+[type="submit"]:hover {
+  background: #E03C42;
 }

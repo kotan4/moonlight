@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animate.css">
+
+
 </head>
 <body>
 <div class="container">
@@ -19,7 +21,7 @@
                 <img src="img/menu-icon.svg">
             </a>
         </div>
-        <nav>
+        <nav class="header">
             <ul class="menu">
                 <li>
                     <a href="">Home</a>
@@ -35,25 +37,36 @@
                 </li>
             </ul>
         </nav>
-        <audio src="" id="audioPlayer">blahblah</audio>
     </header>
     <main>
+        <div id="logoId">
+            <p id="logoTextMoonlight" class="font">Moonlight</p>
+            <p id="logoTextRadio" class="font">Radio</p>
+        </div>
         <section id="playList">
-            <a class="musicIcon" id="gridAreaA" href="http://yogatimejournal.ru/wp-content/uploads/2014/07/01.-Archana-Goddess-Saraswati.mp3">
-                <img src="img/M_06.jpg">
-            </a>
-            <a class="musicIcon" id="gridAreaB" href="http://yogatimejournal.ru/wp-content/uploads/2014/07/08.-Bhairabi-A-Romantic-Combination-of-Notes.mp3">
-                <img src="img/M_05.jpg">
-            </a>
-            <a class="musicIcon" id="gridAreaC" href="http://yogatimejournal.ru/wp-content/uploads/2014/07/02.-Majhi-Fishing-Rod.mp3">
-                <img src="img/T_16.jpg">
-            </a>
-            <a class="musicIcon" id="gridAreaD" href="http://yogatimejournal.ru/wp-content/uploads/2014/07/05.-Damai-Geet-Songs-of-Traditional-Musicians.mp3">
-                <img src="img/M_03.jpg">
-            </a>
+            <div id="gridAreaA" href="http://d.zaix.ru/6xTp.mp3">
+                <div class="hoverImageText">PLAY</div>
+            </div>
+            <div id="gridAreaB" href="http://d.zaix.ru/6xTq.mp3">
+                <div class="hoverImageText">PLAY</div>
+            </div>
+            <div id="gridAreaC" href="http://d.zaix.ru/6xTr.mp3">
+                <div class="hoverImageText">PLAY</div>
+            </div>
+            <div id="gridAreaD" href="http://d.zaix.ru/5xvM.mp3">
+                <div class="hoverImageText">PLAY</div>
+            </div>
         </section>
         <div id="news">
-            <h3>News</h3>
+            <h1>
+                CHANGES IN THE DONATE SYSTEM <b id="someNews">News</b>
+            </h1>
+            <p>It's not a secret for anyone that the radio lives off your
+                donations. We try to fit them into the overall concept of
+                the site in a way that does not violate the balance of
+                power between listeners. In good months it happens that
+                we go into a plus, in bad - we pay out the infrastructure.
+
         </div>
     </main>
 </div>
@@ -62,31 +75,23 @@
         <section id="feedback">
             <form>
                 <h2>Feedback</h2>
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">Name</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Your name">
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">Email address</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlTextarea1">Your message</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                </div>
-                <button type="button" class="btn btn-secondary">Send</button>
+                <input name="name" type="text" class="feedback-input" placeholder="Name"/>
+                <input name="email" type="text" class="feedback-input" placeholder="Email"/>
+                <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+                <input type="submit" value="SUBMIT"/>
             </form>
         </section>
         <div hidden class="alert alert-success" role="alert">Thank you!
         </div>
         <br>
         <br>
-        <p>Content &copy;2018 Kotan4, unless otherwise noted.</p>
+        <p id="copy">Content &copy;2018 Kotan4, unless otherwise noted.</p>
     </footer>
 </div>
-<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 <script src="js/index.js"></script>
 </body>
 </html>
